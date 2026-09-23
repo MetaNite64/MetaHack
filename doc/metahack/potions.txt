@@ -42,7 +42,6 @@ milky + white -> white
 smoky + black -> black
 
 any other combination -> random alchemy
-color alchemy that attempts to create an appearance that doesn't exist -> random alchemy
 
 light + light always = light, dark + dark always = dark
 light + dark picks based on which potion is being dipped into

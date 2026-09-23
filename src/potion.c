@@ -34,6 +34,9 @@ staticfn void peffect_gain_energy(struct obj *);
 staticfn void peffect_oil(struct obj *);
 staticfn void peffect_acid(struct obj *);
 staticfn void peffect_polymorph(struct obj *);
+staticfn void peffect_esp(struct obj *);
+staticfn void peffect_antimagic(struct obj *);
+staticfn void peffect_phasing(struct obj *);
 staticfn boolean H2Opotion_dip(struct obj *, struct obj *, boolean,
                              const char *);
 staticfn short mixtype(struct obj *, struct obj *);
@@ -1329,6 +1332,24 @@ peffect_polymorph(struct obj *otmp)
     }
 }
 
+staticfn void
+peffect_esp(struct obj *otmp)
+{
+    You_feel("as if this potion is unfinished.");
+}
+
+staticfn void
+peffect_antimagic(struct obj *otmp)
+{
+    You_feel("as if this potion is unfinished.");
+}
+
+staticfn void
+peffect_phasing(struct obj *otmp)
+{
+    You_feel("as if this potion is unfinished.");
+}
+
 int
 peffects(struct obj *otmp)
 {
@@ -1416,6 +1437,15 @@ peffects(struct obj *otmp)
         break;
     case POT_POLYMORPH:
         peffect_polymorph(otmp);
+        break;
+    case POT_ESP:
+        peffect_esp(otmp);
+        break;
+    case POT_ANTIMAGIC:
+        peffect_antimagic(otmp);
+        break;
+    case POT_PHASING:
+        peffect_phasing(otmp);
         break;
     default:
         impossible("What a funny potion! (%u)", otmp->otyp);
