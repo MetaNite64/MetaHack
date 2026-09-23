@@ -1,0 +1,55 @@
+New potions (to fill out the total of 28 appearances)
+- Potion of ESP: uncursed grants 25d6 turns of warning, blessed grants 50d6 turns of telepathy. A cursed potion instead triggers a mind blast ("A wave of psychic energy suddenly overwhelms you! You get an awful migraine!").
+- Potion of antimagic: uncursed grants 25% magic resistance, blessed grants 50%. A cursed potion creates an anti-magic field on your current square and triggers it.
+- Potion of phasing: uncursed grants 25d4 turns of temporary phasing, blessed grants 50d6 turns ("You feel much slimmer."). A cursed potion causes you to phase through the floor, falling 1d3 dungeon levels ("You feel much slimmer. In fact, you slip through a crack in the floor!").
+
+REMOVE VANILLA ALCHEMY
+
+make all potion appearances colors (water is still clear)
+
+- pink (light red), ruby (dark red)
+- vermilion (light red-orange), cinnabar (dark red-orange)
+- orange (light orange), brown (dark orange)
+- amber (light yellow-orange), butterscotch (dark yellow-orange)
+- yellow (light yellow), golden (dark yellow)
+- chartreuse (light yellow-green), asparagus green (dark yellow-green)
+- emerald (light green), dark green -> forest green
+- cyan (light blue-green), teal (dark blue-green)
+- sky blue (light blue), brilliant blue -> ocean blue (dark blue)
+- mauve (light blue-purple), grape (dark blue-purple)
+- puce -> lavender (light purple), royal purple (dark purple)
+- magenta (light purple-red), purple-red -> amaranth (dark purple-red)
+- black, white
+- milky (light gray), smoky (dark gray)
+total of 28 appearances, add 3 new random-appearance potions
+
+Color alchemy:
+red + yellow -> orange
+red + blue -> purple
+yellow + blue -> green
+
+red + orange -> red-orange
+orange + yellow -> yellow-orange
+yellow + green -> yellow-green
+green + blue -> blue-green
+blue + purple -> blue-purple
+purple + red -> purple-red
+
+black + white -> randomly either milky or smoky
+dark potion + white -> light potion
+light potion + black -> dark potion
+milky + white -> white
+smoky + black -> black
+
+any other combination -> random alchemy
+color alchemy that attempts to create an appearance that doesn't exist -> random alchemy
+
+light + light always = light, dark + dark always = dark
+light + dark picks based on which potion is being dipped into
+
+Gem alchemy: make gems associated with specific potion effects maybe? dipping into water creates the potion, dipping into other potions can do color alchemy based on the gem's associated potion
+worthless glass dilutes potions
+
+Empty bottles:
+You can choose to save the empty bottle when you quaff a potion, or #tip a potion to replace it with an empty bottle. Dipping an empty bottle into a potion results in two identical diluted versions of that potion.
+You can also use a magic marker to scrawl a label on an empty bottle, which results in "The bottle fills with [appearance] liquid!". Same odds as writing a scroll or spellbook (i.e. use the luck-based table for unknown potions, always succeed for known potions or explicitly picking a potion color). However, the improved odds part of the table goes to the new Alchemist role instead of the Wizard role. Additionally, if the roll fails, it will produce a random potion instead of just leaving you with an empty bottle or consuming the bottle entirely ("Your marker slips on the glass! The bottle fills with [appearance] liquid...")
