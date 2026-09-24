@@ -1,7 +1,9 @@
-New potions (to fill out the total of 28 appearances)
-- Potion of ESP: uncursed grants 25d6 turns of warning, blessed grants 50d6 turns of telepathy. A cursed potion instead triggers a mind blast ("A wave of psychic energy suddenly overwhelms you! You get an awful migraine!").
-- Potion of antimagic: uncursed grants 25% magic resistance, blessed grants 50%. A cursed potion creates an anti-magic field on your current square and triggers it.
-- Potion of phasing: uncursed grants 25d4 turns of temporary phasing, blessed grants 50d6 turns ("You feel much slimmer."). A cursed potion causes you to phase through the floor, falling 1d3 dungeon levels ("You feel much slimmer. In fact, you slip through a crack in the floor!").
+New potions (to fill out the total of 28 randomized appearances)
+- Potion of ESP: cursed effect triggers a mind blast ("A wave of psychic energy pours over you! You get an awful migraine...", take 1-15 damage). Uncursed effect gives 200-299 turns of temporary warning, blessed effect gives 150-199 turns of temporary intrinsic telepathy. 2% chance to appear randomly, 250 base price.
+- Potion of antimagic: Cursed effect creates an anti-magic field on your current square and triggers it. Uncursed effect gives 300-499 turns of half spell damage, blessed effect gives 200-299 turns of magic resistance. 1% chance to appear randomly, 300 base price.
+- Potion of phasing: uncursed grants 25d4 turns of temporary phasing, blessed grants 50d6 turns ("You feel much slimmer."). A cursed potion causes you to phase through the floor, falling 1d3 dungeon levels ("You feel much slimmer. In fact, you slip through a crack in the floor!"). 1% chance to appear randomly, 250 base price.
+
+To account for the new potions, 4 potions had their probabilities reduced by 1 percentage point: monster detection, object detection, paralysis, and confusion each went from 4% to 3%.
 
 REMOVE VANILLA ALCHEMY
 

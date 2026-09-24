@@ -1335,7 +1335,27 @@ peffect_polymorph(struct obj *otmp)
 staticfn void
 peffect_esp(struct obj *otmp)
 {
-    You_feel("as if this potion is unfinished.");
+    /* cursed effect: psychic mind blast */
+    if (otmp->cursed) {
+        pline("A wave of psychic energy pours over you!");
+        You("get an awful migraine...");
+	int dmg = rnd(15);
+	if (Half_spell_damage)
+	    dmg = (dmg + 1) / 2;
+	losehp(dmg, "psychic blast from a potion", KILLED_BY_AN);
+    /* blessed effect: 150-199 turns of telepathy */
+    } else if (otmp->blessed) {
+	incr_itimeout(&HTelepat, rn1(50, 150));
+	You_feel(Hallucination ?
+            "in touch with the cosmos." :
+	    "a strange mental acuity."
+	);
+	see_monsters();
+    /* uncursed effect: 200-299 turns of warning */
+    } else {
+        incr_itimeout(&HWarning, rn1(100, 200));
+	You_feel("sensitive.");
+    }
 }
 
 staticfn void
