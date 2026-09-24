@@ -1,0 +1,4 @@
+New role revolving around potions
+comes with a new "potions" skill that can be trained to improve potion combat (thrown potions hit monsters more often) and random alchemy
+starts with empty bottles and a wide variety of random potions, as well as all standard potions identified (?)
+starts with an alchemy smock
