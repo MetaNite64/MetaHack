@@ -941,19 +941,27 @@ nh_timeout(void)
                 if (!Protection_from_shape_changers)
                     restartcham();
                 break;
-	    case TELEPAT:
-		/* from blessed potion of ESP */
-		see_monsters();
-		You_feel(Hallucination ?
-		    "out of touch with the cosmos." :
-		    "a strange lack of mental acuity."
-		);
-		break;
-	    case WARNING:
-		/* from uncursed potion of ESP */
-		see_monsters();
-		You_feel("less sensitive.");
-		break;
+	        case TELEPAT:
+		        /* from blessed potion of ESP */
+		        see_monsters();
+		        You_feel(Hallucination ?
+		            "out of touch with the cosmos." :
+		            "a strange lack of mental acuity."
+		        );
+		        break;
+	        case WARNING:
+        		/* from uncursed potion of ESP */
+	        	see_monsters();
+		        You_feel("less sensitive.");
+		        break;
+            case ANTIMAGIC:
+                /* from blessed potion of antimagic */
+                Your("body isn't tingling anymore.");
+                break;
+            case HALF_SPDAM:
+                /* from uncursed potion of antimagic */
+                Your("skin isn't tingling anymore.");
+                break;
             }
         }
 
